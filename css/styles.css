@@ -2,6 +2,12 @@
 :root {
   --text-color: #333;
   --accent-color-green: #0a775f;
+  --accent-color-green-80: rgb(10, 119, 95, 0.8);
+  --accent-color-green-60: rgb(10, 119, 95, 0.6);
+  --accent-color-light-brown: #c99b67;
+  --accent-color-light-brown-80: rgb(201, 155, 103, 0.8);
+  --accent-color-light-brown-60: rgb(201, 155, 103, 0.6);
+  --light-brown: #f3d7b7;
   --outline-color: var(--accent-color-green);
 }
 
@@ -85,6 +91,52 @@ img {
   padding-right: 20px;
 }
 
+/* BUTTON CSS START  */
+.button-link {
+  display: inline-block;
+  margin: 0;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  white-space: nowrap;
+}
+
+/* BUTTON GREEN CSS START  */
+.green-btn-link {
+  background-color: var(--accent-color-green);
+  color: #fff;
+}
+
+.green-btn-link:hover {
+  background-color: var(--accent-color-green-80);
+}
+
+.green-btn-link:active {
+  background-color: var(--accent-color-green-60);
+}
+
+/* BUTTON LIGHT BROWN CSS START  */
+.brown-btn-link {
+    background-color: var(--accent-color-light-brown);
+    color: #fff;
+  }
+  
+  .brown-btn-link:hover {
+    background-color: var(--accent-color-light-brown-80);
+  }
+  
+  .brown-btn-link:active {
+    background-color: var(--accent-color-light-brown-60);
+  }
+
 /* SAIT MAIN CSS START  */
 .site-main {
   flex-grow: 1;
@@ -92,6 +144,7 @@ img {
 
 /* SITE HEADER CSS START  */
 .site-header-hero-wrapper {
+    background-color: var(--light-brown);
   background-image: url("../images/site-header-intro-bg.jpg");
 }
 
@@ -111,6 +164,7 @@ img {
 .site-header-logo-link {
   display: flex;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .site-header-logo-link:hover {
@@ -135,13 +189,12 @@ img {
 }
 
 .sitenav-item:not(:last-child) {
-
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .sitenav-link {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
   display: block;
   text-decoration: none;
   font-size: 12px;
@@ -150,6 +203,7 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 .sitenav-link:hover {
@@ -158,6 +212,48 @@ img {
 
 .sitenav-link:active {
   opacity: 0.6;
+}
+
+/* HERO SECTION CSS START  */
+.hero-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero-info-wrapper {
+  width: 100%;
+  max-width: 730px;
+  padding: 116px 116px 100px 150px;
+}
+
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000;
+}
+
+.hero-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.hero-text:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.hero-section-img {
+  width: 710px;
+  height: 596px;
+  object-fit: cover;
+}
+
+.hero-img-index {
+  height: 696px;
 }
 
 /* RETINA BG CSS START  */
