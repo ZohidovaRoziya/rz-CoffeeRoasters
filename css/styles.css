@@ -1,61 +1,173 @@
 /* CUSTOM PROPS CSS START  */
 :root {
-    --primary-color: #000;
-    --text-color: #fff;
+  --text-color: #333;
+  --accent-color-green: #0a775f;
+  --outline-color: var(--accent-color-green);
+}
+
+/* FONTS  */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* GLOBAL CSS START  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing:inherit;
+  box-sizing: inherit;
 }
 
 *:focus {
-    outline: 2px dotted var(--primary-color);
-    outline-offset: 3px;
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 3px;
 }
 
 html {
-    height: 100%;
-    box-sizing:border-box;
-    scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: var(--text-color);
-    padding: 0;
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-color);
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* CONTAINER CSS START  */
 .container {
-     width: 100%;
-     max-width: 1200px;
-     margin-left: auto;
-     margin-right: auto;
-     padding-left: 50px;
-     padding-right: 50px;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* SAIT MAIN CSS START  */
 .site-main {
-    flex-grow: 1;
+  flex-grow: 1;
+}
+
+/* SITE HEADER CSS START  */
+.site-header-hero-wrapper {
+  background-image: url("../images/site-header-intro-bg.jpg");
+}
+
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.site-header-logo-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.site-header-logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-header-logo-link:active {
+  opacity: 0.6;
+}
+
+.site-header-logo {
+  width: 234px;
+  height: 24px;
+}
+
+/* SITE NAV SCC START  */
+.sitenav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sitenav-item:not(:last-child) {
+
+    margin-right: 40px;
+}
+
+.sitenav-link {
+    margin: 0;
+    padding: 0;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.sitenav-link:hover {
+  color: var(--accent-color-green);
+}
+
+.sitenav-link:active {
+  opacity: 0.6;
+}
+
+/* RETINA BG CSS START  */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .site-header-hero-wrapper {
+    background-image: url("../images/site-header-intro-bg@2x.jpg");
+  }
 }
