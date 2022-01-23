@@ -8,6 +8,7 @@
   --accent-color-light-brown-80: rgb(201, 155, 103, 0.8);
   --accent-color-light-brown-60: rgb(201, 155, 103, 0.6);
   --light-brown: #f3d7b7;
+  --light-bg: #f5f5ec;
   --outline-color: var(--accent-color-green);
 }
 
@@ -140,6 +141,8 @@ img {
 /* SAIT MAIN CSS START  */
 .site-main {
   flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 /* SITE HEADER CSS START  */
@@ -256,6 +259,30 @@ img {
   height: 696px;
 }
 
+/* INDEX COLLECTION CSS START  */
+.index-collection {
+}
+.container {
+}
+.index-collection-inner {
+    background-color: var(--light-bg);
+    background-image: url("../images/index-collection-bg.jpg")
+}
+.index-collection-heading {
+}
+.index-collection-list {
+}
+.index-collection-item {
+}
+.index-collection-img {
+}
+.index-collectin-info {
+}
+.index-collection-title {
+}
+.index-collectin-text {
+}
+
 /* RETINA BG CSS START  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -263,7 +290,12 @@ img {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+
   .site-header-hero-wrapper {
     background-image: url("../images/site-header-intro-bg@2x.jpg");
   }
+
+  .index-collection-inner {
+    background-image: url("../images/index-collection-bg@2x.jpg")
+}
 }
