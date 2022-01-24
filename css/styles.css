@@ -260,6 +260,10 @@ img {
 }
 
 /* INDEX COLLECTION CSS START  */
+.index-collection {
+  margin-bottom: 20px;
+}
+
 .index-collection-inner {
   padding: 50px 143px;
   background-color: var(--light-bg);
@@ -273,7 +277,7 @@ img {
   line-height: 59px;
   text-align: center;
   font-variant: small-caps;
-  color:var(--text-color);
+  color: var(--text-color);
 }
 
 .index-collection-list {
@@ -290,7 +294,6 @@ img {
 .index-collection-item:nth-child(even) {
   flex-direction: row-reverse;
 }
-
 
 .index-collection-img {
   flex-shrink: 0;
@@ -318,11 +321,87 @@ img {
   margin: 0;
   font-size: 22px;
   line-height: 34px;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .index-collectin-text {
   margin-bottom: 10px;
+}
+
+/* INDEX FEATURES SECTION CSS START  */
+.index-features {
+  margin-bottom: 30px;
+}
+
+.index-features-inner {
+  padding: 50px 30px;
+  background-image: url("../images/index-funcation-bg.jpg");
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+}
+
+.index-features-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #fff;
+}
+
+.index-features-lead {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.index-features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+  list-style-type: none;
+}
+
+.index-features-item {
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.index-features-img {
+  display: flex;
+  width: 433px;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 28px;
+}
+
+.index-features-item-heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  font-variant: small-caps;
+  color: var(--text-color);
+}
+
+.index-features-item-text {
+  width: 377px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
 }
 
 /* RETINA BG CSS START  */
@@ -338,5 +417,9 @@ img {
 
   .index-collection-inner {
     background-image: url("../images/index-collection-bg@2x.jpg");
+  }
+
+  .index-features-inner {
+    background-image: url("../images/index-funcation-bg@2x.jpg");
   }
 }
