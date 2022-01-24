@@ -277,7 +277,6 @@ img {
   line-height: 59px;
   text-align: center;
   font-variant: small-caps;
-  color: var(--text-color);
 }
 
 .index-collection-list {
@@ -315,13 +314,11 @@ img {
   font-size: 48px;
   line-height: 56px;
   font-variant: small-caps;
-  color: #333;
 }
 .index-collectin-text {
   margin: 0;
   font-size: 22px;
   line-height: 34px;
-  color: var(--text-color);
 }
 
 .index-collectin-text {
@@ -393,7 +390,6 @@ img {
   font-size: 30px;
   line-height: 35px;
   font-variant: small-caps;
-  color: var(--text-color);
 }
 
 .index-features-item-text {
@@ -401,7 +397,90 @@ img {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  color: var(--text-color);
+}
+
+/* HOW IT WORKS SECTION CSS START  */
+.how-it-work-inner {
+  padding: 50px 30px;
+  background-color: var(--accent-color-green);
+  background-image: url("../images/how-it-works.jpg");
+  text-align: center;
+}
+
+.how-it-work-heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #fff;
+}
+
+.how-it-works-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+  list-style-type: none;
+  display: flex;
+  text-align: left;
+  margin-left: -20px;
+  counter-reset: how-it-works;
+}
+
+.how-it-works-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  counter-increment: how-it-works;
+}
+
+.how-it-works-item::before {
+  width: 60px;
+  height: 60px;
+  border: 4px solid var(--accent-color-light-brown);
+  background-color: var(--light-bg);
+  margin-bottom: 20px;
+  content: "";
+}
+
+.how-it-works-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: var(--light-bg);
+  padding: 20px 20px 40px;
+}
+
+.how-it-works-info::before {
+  align-self: flex-end;
+  content: "0" counter(how-it-works);
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  font-variant: small-caps;
+  margin-bottom: 45px;
+}
+
+.how-it-works-step-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+
+.how-it-title-step-text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.how-it-work-cta:focus {
+  outline-color: var(--accent-color-light-brown);
 }
 
 /* RETINA BG CSS START  */
@@ -421,5 +500,9 @@ img {
 
   .index-features-inner {
     background-image: url("../images/index-funcation-bg@2x.jpg");
+  }
+
+  .how-it-work-inner {
+    background-image: url("../images/how-it-works.jpg");
   }
 }
