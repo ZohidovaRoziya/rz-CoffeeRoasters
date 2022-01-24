@@ -217,6 +217,11 @@ img {
   opacity: 0.6;
 }
 
+.sitenav-medium-font .sitenav-link {
+  font-size: 16px;
+  line-height: normal;
+}
+
 /* HERO SECTION CSS START  */
 .hero-container {
   display: flex;
@@ -483,6 +488,69 @@ img {
   outline-color: var(--accent-color-light-brown);
 }
 
+/* SITE FOOTER CSS START  */
+.site-footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: var(--accent-color-light-brown);
+  background-image: url("../images/site-header-intro-bg.jpg");
+}
+
+.site-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.site-footer-logo-link {
+  display: flex;
+}
+
+.site-footer-logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-footer-logo-link:active {
+  opacity: 0.6;
+}
+
+.site-footer-logo {
+  flex-shrink: 0;
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/*SITE FOOTER SOCIALS CSS START  */
+.site-footer-socials-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-footer-socials-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-footer-socials-link {
+  display: flex;
+  color: var(--text-color);
+}
+
+.site-footer-socials-link:hover {
+  color: var(--accent-color-green);
+}
+
+.site-footer-socials-link:active {
+  opacity: 0.6;
+}
+
+
+
+
 /* RETINA BG CSS START  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -490,7 +558,8 @@ img {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .site-header-hero-wrapper {
+  .site-header-hero-wrapper,
+  .site-footer {
     background-image: url("../images/site-header-intro-bg@2x.jpg");
   }
 
